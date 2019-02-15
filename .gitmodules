@@ -1,0 +1,3 @@
+[submodule "AlleeSDKAndroid"]
+	path = alleesdk
+	url = https://github.com/Bematechus/AlleeSDKAndroid.git

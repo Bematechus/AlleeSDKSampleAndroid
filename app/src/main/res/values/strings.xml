@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">AlleeSDK</string>
+    <string name="rb_prod">Prod</string>
+    <string name="rb_stage">Stage</string>
+    <string name="rb_dev">Dev</string>
+    <string name="store_key">Store Key</string>
+    <string name="port">Port</string>
+    <string name="station">Station</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="change_env_title">Change environment</string>
+    <string name="change_env_msg">You need to reopen the App to apply this change</string>
+    <string name="title_activity_form">FormActivity</string>
+
+    <string name="order_name">Order Name</string>
+    <string name="order_xml">Order XML\n\nYou can use %s to dynamic order id \nand %s to dynamic station id</string>
+    <string name="delete">Delete</string>
+
+    <string name="delete_order_title">Delete Order</string>
+    <string name="delete_order_msg">Are you sure to want to delete %s?</string>
+
+    <string name="activity_form_add">Add Order</string>
+    <string name="activity_form_edit">Edit Order</string>
+    <string name="form_fill_name">Please fill the name</string>
+
+    <string name="default_order">Default %d</string>
+
+    <string name="order_sending">Sending order...</string>
+    <string name="order_sent">Order was sent</string>
+
+    <string name="order_status_new">DOING</string>
+    <string name="order_status_prepared">PREPARED</string>
+    <string name="order_status_done">DELIVERED</string>
+    <string name="order_status_unknown">UNKNOWN</string>
+
+
+</resources>

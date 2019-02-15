@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/bottomSheet"
+              android:layout_width="@dimen/bottom_sheet_width"
+              android:layout_height="500dp"
+              android:background="#FFF"
+              android:layout_gravity="end"
+              android:orientation="vertical"
+              app:behavior_hideable="false"
+              android:elevation="12dp"
+              app:behavior_peekHeight="60dp"
+              app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout android:background="#f0f0f0"
+                  android:layout_width="match_parent"
+                  android:elevation="2dp"
+                  android:layout_height="60dp">
+
+        <ImageButton android:src="@drawable/ic_refresh"
+                     android:background="?attr/selectableItemBackgroundBorderless"
+                     android:layout_width="wrap_content"
+                     android:layout_gravity="center"
+                     android:scaleType="fitCenter"
+                     android:padding="16dp"
+                     android:layout_height="match_parent"
+                     android:onClick="actionRefresh"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:text="Order Status"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOrderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</LinearLayout>
