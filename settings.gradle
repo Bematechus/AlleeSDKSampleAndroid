@@ -1,1 +1,1 @@
-include ':app', ':alleesdk'
+include ':app'//, ':alleesdk'

@@ -179,15 +179,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun callback(orderId: String): Callback {
-        return Callback {
+        return Callback { error ->
             sending = false
 
             runOnUiThread {
-                if (it != null) {
-                    print(it)
-                    tvMessage.text = it
+                error?.let {
+                    print(error)
+                    tvMessage.text = error
 
-                } else {
+                } ?: run {
                     tvMessage.text = getString(R.string.order_sent)
                     orderStatusAdapter.addOrderId(orderId)
                 }
