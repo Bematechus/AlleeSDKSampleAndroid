@@ -137,6 +137,7 @@ Still, if you need to provide more information in your order, please check all o
     AlleeSummary summary; // Summary of this item
     AlleeItemRecipe itemRecipe; // Recipe of this item
     ItemType itemType = ItemType.REGULAR; // Item priority (REGULAR, FIRE)
+    String category; // Item category
     
     
 #### AlleeCondiment

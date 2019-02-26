@@ -217,7 +217,8 @@ class MainActivity : AppCompatActivity() {
             item("Veggie Burger", 1, listOf(
                 condiment("Lettuce"),
                 condiment("Tomatoes"),
-                condiment("Pickles")
+                condiment("Pickles"),
+                condiment("Hot Pepper Relish")
             ), summary = AlleeSummary("Soy burger", 2), recipe = recipe()),
 
             item("French Fries", 2, listOf(
@@ -247,6 +248,8 @@ class MainActivity : AppCompatActivity() {
         order.items[0].preparationTime = 10.0
         order.items[0].condiments[1].preparationTime = 5.0
         order.items[1].itemType = AlleeItem.ItemType.FIRE
+
+        order.items[0].category = "Burger"
 
         send(order)
     }
