@@ -4,7 +4,7 @@ This SDK works for Android platform only.
 
 ## Installation
 ### Gradle
-    implementation 'com.bematech:alleesdk:1.0.2'
+    implementation 'com.bematech:alleesdk:1.0.3'
   
 ### Maven
     <dependency>
